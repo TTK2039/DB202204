@@ -10,7 +10,7 @@ join major m
 on s.major_id = m.major_id
 where hometown != '東京';
 
--- 税込み価格を計算してくれるファンクション
+--- 税込み価格を計算してくれるファンクション
 CREATE OR REPLACE FUNCTION tax_include(amount integer) RETURNS integer
  LANGUAGE plpgsql
 AS $function$
